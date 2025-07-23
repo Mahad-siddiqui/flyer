@@ -1,4 +1,3 @@
-// src/components/templates/template-preview.tsx
 "use client";
 
 import { useState, useEffect } from "react";
@@ -16,6 +15,7 @@ import {
   ExternalLink,
   Crown,
 } from "lucide-react";
+import Link from "next/link";
 import { QRCodeGenerator } from "@/components/qr-code-generator";
 
 interface TemplatePreviewProps {
@@ -284,8 +284,11 @@ export function TemplatePreview({ template, flyerData }: TemplatePreviewProps) {
                     <Button variant="outline" className="flex-1">
                       <QrCode className="h-4 w-4 mr-2" />
                       QR Code
+                  <Link href="/dashboard/upload">
+                    <Button>
+                      Upload Flyer
                     </Button>
-                  </div>
+                  </Link>
                 </div>
               )}
             </>

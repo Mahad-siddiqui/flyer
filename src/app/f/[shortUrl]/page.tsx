@@ -166,8 +166,6 @@
 // }
 
 // src/app/f/[shortUrl]/page.tsx
-
-
 import { notFound } from 'next/navigation'
 import { prisma } from '@/lib/prisma'
 import { Metadata } from 'next'
@@ -249,6 +247,12 @@ async function getFlyerByShortUrl(shortUrl: string) {
     console.error('Error fetching flyer:', error)
     return null
   }
+}
+
+interface PageProps {
+    params: {
+        shortUrl: string
+    }
 }
 
 // Rest of your code remains the same...

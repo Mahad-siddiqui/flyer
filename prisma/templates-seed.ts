@@ -1,4 +1,3 @@
-// prisma/templates-seed.ts
 import { PrismaClient } from "@prisma/client";
 
 const prisma = new PrismaClient();
@@ -9,7 +8,7 @@ const sampleTemplates = [
     description: "Clean and modern design perfect for events and conferences",
     category: "Event",
     isPremium: false,
-    previewImage: "/templates/modern-event-card.jpg",
+    previewImage: "https://images.pexels.com/photos/1181298/pexels-photo-1181298.jpeg?auto=compress&cs=tinysrgb&w=400",
     htmlContent: `
       <div class="event-card">
         <div class="header">
@@ -133,7 +132,7 @@ const sampleTemplates = [
     description: "Eye-catching design for sales and promotional content",
     category: "Promo",
     isPremium: false,
-    previewImage: "/templates/vibrant-promotion.jpg",
+    previewImage: "https://images.pexels.com/photos/1181677/pexels-photo-1181677.jpeg?auto=compress&cs=tinysrgb&w=400",
     htmlContent: `
       <div class="promo-card">
         <div class="badge">SPECIAL OFFER</div>
@@ -249,7 +248,7 @@ const sampleTemplates = [
     description: "Clean and professional template for job postings",
     category: "Job",
     isPremium: false,
-    previewImage: "/templates/professional-job.jpg",
+    previewImage: "https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg?auto=compress&cs=tinysrgb&w=400",
     htmlContent: `
       <div class="job-card">
         <div class="header">
@@ -365,7 +364,7 @@ const sampleTemplates = [
     description: "Clean layout perfect for newsletters and announcements",
     category: "Newsletter",
     isPremium: false,
-    previewImage: "/templates/newsletter-digest.jpg",
+    previewImage: "https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg?auto=compress&cs=tinysrgb&w=400",
     htmlContent: `
       <div class="newsletter">
         <div class="header">
@@ -466,7 +465,7 @@ const sampleTemplates = [
     description: "Premium template with elegant design for upscale events",
     category: "Event",
     isPremium: true,
-    previewImage: "/templates/luxury-event.jpg",
+    previewImage: "https://images.pexels.com/photos/1181396/pexels-photo-1181396.jpeg?auto=compress&cs=tinysrgb&w=400",
     htmlContent: `
       <div class="luxury-event">
         <div class="background-pattern"></div>
@@ -606,6 +605,119 @@ const sampleTemplates = [
       .contact {
         font-size: 0.8rem;
         opacity: 0.8;
+      }
+    `,
+  },
+  {
+    name: "Corporate Meeting",
+    description: "Professional template for business meetings and conferences",
+    category: "Event",
+    isPremium: false,
+    previewImage: "https://images.pexels.com/photos/1181533/pexels-photo-1181533.jpeg?auto=compress&cs=tinysrgb&w=400",
+    htmlContent: `
+      <div class="corporate-meeting">
+        <div class="header">
+          <h1 class="title">{{title}}</h1>
+          <div class="subtitle">{{description}}</div>
+        </div>
+        <div class="meeting-details">
+          <div class="detail-row">
+            <span class="label">Date:</span>
+            <span class="value">{{date}}</span>
+          </div>
+          <div class="detail-row">
+            <span class="label">Time:</span>
+            <span class="value">{{time}}</span>
+          </div>
+          <div class="detail-row">
+            <span class="label">Location:</span>
+            <span class="value">{{location}}</span>
+          </div>
+        </div>
+        <div class="action-section">
+          <a href="{{buttonUrl}}" class="join-button">{{buttonText}}</a>
+        </div>
+        <div class="contact-info">
+          <div>{{email}}</div>
+          <div>{{phone}}</div>
+        </div>
+      </div>
+    `,
+    cssContent: `
+      .corporate-meeting {
+        max-width: 500px;
+        margin: 0 auto;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        font-family: 'Arial', sans-serif;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+      }
+      
+      .header {
+        padding: 2rem;
+        text-align: center;
+        background: rgba(255,255,255,0.1);
+      }
+      
+      .title {
+        font-size: 2rem;
+        font-weight: bold;
+        margin: 0 0 1rem 0;
+      }
+      
+      .subtitle {
+        font-size: 1.1rem;
+        opacity: 0.9;
+      }
+      
+      .meeting-details {
+        padding: 2rem;
+        background: rgba(0,0,0,0.1);
+      }
+      
+      .detail-row {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 1rem;
+        padding: 0.5rem 0;
+        border-bottom: 1px solid rgba(255,255,255,0.2);
+      }
+      
+      .label {
+        font-weight: bold;
+      }
+      
+      .action-section {
+        padding: 2rem;
+        text-align: center;
+      }
+      
+      .join-button {
+        background: white;
+        color: #667eea;
+        padding: 1rem 2rem;
+        border-radius: 25px;
+        text-decoration: none;
+        font-weight: bold;
+        display: inline-block;
+        transition: transform 0.2s;
+      }
+      
+      .join-button:hover {
+        transform: translateY(-2px);
+      }
+      
+      .contact-info {
+        padding: 1rem 2rem 2rem;
+        text-align: center;
+        font-size: 0.9rem;
+        opacity: 0.8;
+      }
+      
+      .contact-info div {
+        margin: 0.25rem 0;
       }
     `,
   },
