@@ -26,6 +26,7 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 import { formatDate } from "@/lib/utils";
+import { toast } from "sonner";
 
 interface DashboardStats {
   totalFlyers: number;
@@ -136,8 +137,8 @@ export default function DashboardPage() {
           </p>
         </div>
         <div className="flex gap-3 mt-4 md:mt-0">
-          <Link href="/dashboard/upload">
-            <Button className="gap-2">
+          <Link href="/templates">
+            <Button className="gap-2" onClick={()=>{toast.message("First please select a template ")}}>
               <Plus className="h-4 w-4" />
               Create Flyer
             </Button>
@@ -286,7 +287,7 @@ export default function DashboardPage() {
                             <img
                               src={flyer.qrCodePath}
                               alt={flyer.title}
-                              className="h-20 w-2   0 rounded-lg object-cover"
+                              className="h-20 w-20 rounded-lg object-cover"
                               style={{ objectFit: "contain" }}
                             />
                           )}
@@ -309,12 +310,12 @@ export default function DashboardPage() {
                             </div>
                           </div>
                           <div className="flex space-x-2">
-                            <Button size="sm" variant="outline" asChild>
+                            {/* <Button size="sm" variant="outline" asChild>
                               <Link href={flyer.generatedUrl} target="_blank">
                                 <Eye className="h-4 w-4 mr-1" />
                                 View
                               </Link>
-                            </Button>
+                            </Button> */}
                             <Button size="sm" variant="outline" asChild>
                               <Link href={`/dashboard/flyers/${flyer.id}`}>
                                 <Settings className="h-4 w-4 mr-1" />

@@ -21,11 +21,11 @@ function ClientLayout({ session, children }: { session: Session | null; children
                     <main className="flex-1">
                         {children}
                     </main>
-                    <footer className="border-t">
+                    <footer className="border-t px-6">
                         <div className="container mx-auto flex flex-col items-center justify-between gap-4 py-10 md:h-24 md:flex-row md:py-0">
                             <div className="flex flex-col items-center gap-4 px-8 md:flex-row md:gap-2 md:px-0">
-                                <p className="text-center text-sm leading-loose text-muted-foreground md:text-left">
-                                    Built with ❤️ by FlyerWeb Team. The source code is available on{' '}
+                                <p className="text-center text-sm leading-loose text-muted-foreground md:text-left ">
+                                    Built with ❤️ by InteractMe Team. The source code is available on{' '}
                                     <a
                                         href="https://github.com/flyerweb"
                                         target="_blank"

@@ -32,7 +32,7 @@ export function Header() {
                         <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary">
                             <Zap className="h-4 w-4 text-primary-foreground" />
                         </div>
-                        <span className="text-xl font-bold text-gradient">FlyerWeb</span>
+                        <span className="text-xl font-bold text-gradient">InteractMe</span>
                     </Link>
 
                     <nav className="hidden md:flex items-center space-x-6 text-sm font-medium">
