@@ -24,6 +24,7 @@ import {
     Shield
 } from 'lucide-react'
 import Link from 'next/link'
+import { toast } from 'sonner'
 
 interface TrialData {
     fileName: string
@@ -107,8 +108,9 @@ export default function PreviewPage() {
     const handleSignUp = () => {
         // Store current state for after signup
         sessionStorage.setItem('preSignupFields', JSON.stringify(fields))
-        router.push('/auth/signin?callbackUrl=/try-now/publish')
-    }
+        router.push('/auth/signin?callbackUrl/templates')
+        toast.message("please sign in to publish your template")
+    }   
 
     if (!trialData || !selectedTemplate) {
         return (

@@ -10,6 +10,7 @@
   "/api/templates/[id]/route": "app/api/templates/[id]/route.js",
   "/api/templates/route": "app/api/templates/route.js",
   "/api/upload/route": "app/api/upload/route.js",
+  "/auth/register/page": "app/auth/register/page.js",
   "/auth/signin/page": "app/auth/signin/page.js",
   "/billing/page": "app/billing/page.js",
   "/billing/success/page": "app/billing/success/page.js",
