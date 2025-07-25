@@ -356,7 +356,7 @@ async function createCheckoutSession(priceId, userId) {
                     userId
                 }
             },
-            success_url: `${process.env.NEXTAUTH_URL}/dashboard?session_id={CHECKOUT_SESSION_ID}`,
+            success_url: `${process.env.NEXTAUTH_URL}/pricing/success?session_id={CHECKOUT_SESSION_ID}`,
             cancel_url: `${process.env.NEXTAUTH_URL}/pricing`
         });
         return session;
