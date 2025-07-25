@@ -317,6 +317,7 @@ export default function TryNowPage() {
                                 <div key={uploadedFile.uploadId} className="flex items-center gap-4 p-4 border rounded-lg">
                                     <div className="flex-shrink-0">
                                         {uploadedFile.file.type.startsWith('image/') ? (
+                                            // eslint-disable-next-line @next/next/no-img-element
                                             <img
                                                 src={uploadedFile.preview}
                                                 alt={uploadedFile.file.name}
