@@ -496,7 +496,7 @@ export default function FlyerEditPage() {
                             </CardDescription>
                         </CardHeader>
                         <CardContent>
-                            <div className="border rounded-lg overflow-hidden bg-white shadow-sm">
+                            <div className="border rounded-lg overflow-hidden shadow-sm">
                                 <div className="aspect-[3/4] bg-gradient-to-br from-primary/20 to-primary/5 p-6 flex flex-col justify-center text-center">
                                     <h2 className="text-2xl font-bold mb-4 text-primary">
                                         {fields.title || 'Your Title Here'}
@@ -506,7 +506,7 @@ export default function FlyerEditPage() {
                                     </p>
                                     
                                     {(fields.date || fields.time) && (
-                                        <div className="mb-4 p-3 bg-white/80 rounded-lg">
+                                        <div className="mb-4 p-3 bg-white/1 0 rounded-lg">
                                             {fields.date && <div className="font-medium">{fields.date}</div>}
                                             {fields.time && <div className="text-sm text-muted-foreground">{fields.time}</div>}
                                         </div>
