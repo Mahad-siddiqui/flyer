@@ -253,6 +253,7 @@ module.exports = mod;
 __turbopack_context__.s({
     "createCheckoutSession": ()=>createCheckoutSession,
     "createCustomerPortalSession": ()=>createCustomerPortalSession,
+    "formatPrice": ()=>formatPrice,
     "getStripe": ()=>getStripe,
     "plans": ()=>plans,
     "stripe": ()=>stripe
@@ -375,6 +376,12 @@ async function createCustomerPortalSession(customerId) {
         console.error("Error creating customer portal session:", error);
         throw error;
     }
+}
+function formatPrice(price) {
+    return new Intl.NumberFormat('en-US', {
+        style: 'currency',
+        currency: 'USD'
+    }).format(price);
 }
 }),
 "[project]/src/app/pricing/page.tsx [app-ssr] (ecmascript)": ((__turbopack_context__) => {

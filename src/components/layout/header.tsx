@@ -114,7 +114,7 @@ export function Header() {
                                         </Link> */}
                                     </DropdownMenuItem>
                                     <DropdownMenuItem asChild>
-                                        <Link href="/dashboard/billing">
+                                        <Link href="/pricing">
                                             <CreditCard className="mr-2 h-4 w-4" />
                                             Billing
                                         </Link>

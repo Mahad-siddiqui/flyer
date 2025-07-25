@@ -6,6 +6,12 @@
     "[project]/src/app/auth/signin/page": [
       "static/media/06ba6ef833b337bc-s.p.0faac26c.woff2"
     ],
+    "[project]/src/app/billing/page": [
+      "static/media/06ba6ef833b337bc-s.p.0faac26c.woff2"
+    ],
+    "[project]/src/app/billing/success/page": [
+      "static/media/06ba6ef833b337bc-s.p.0faac26c.woff2"
+    ],
     "[project]/src/app/dashboard/flyers/[id]/page": [
       "static/media/06ba6ef833b337bc-s.p.0faac26c.woff2"
     ],
@@ -22,6 +28,12 @@
       "static/media/06ba6ef833b337bc-s.p.0faac26c.woff2"
     ],
     "[project]/src/app/page": [
+      "static/media/06ba6ef833b337bc-s.p.0faac26c.woff2"
+    ],
+    "[project]/src/app/pricing/page": [
+      "static/media/06ba6ef833b337bc-s.p.0faac26c.woff2"
+    ],
+    "[project]/src/app/pricing/success/page": [
       "static/media/06ba6ef833b337bc-s.p.0faac26c.woff2"
     ],
     "[project]/src/app/templates/[id]/preview/page": [

@@ -261,6 +261,7 @@ var { k: __turbopack_refresh__, m: module } = __turbopack_context__;
 __turbopack_context__.s({
     "createCheckoutSession": ()=>createCheckoutSession,
     "createCustomerPortalSession": ()=>createCustomerPortalSession,
+    "formatPrice": ()=>formatPrice,
     "getStripe": ()=>getStripe,
     "plans": ()=>plans,
     "stripe": ()=>stripe
@@ -384,6 +385,12 @@ async function createCustomerPortalSession(customerId) {
         console.error("Error creating customer portal session:", error);
         throw error;
     }
+}
+function formatPrice(price) {
+    return new Intl.NumberFormat('en-US', {
+        style: 'currency',
+        currency: 'USD'
+    }).format(price);
 }
 if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
     __turbopack_context__.k.registerExports(module, globalThis.$RefreshHelpers$);
