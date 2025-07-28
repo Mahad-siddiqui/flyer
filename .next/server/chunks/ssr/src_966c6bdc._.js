@@ -833,13 +833,14 @@ function TryNowPage() {
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 className: "flex-shrink-0",
-                                                children: uploadedFile.file.type.startsWith('image/') ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                                                children: uploadedFile.file.type.startsWith('image/') ? // eslint-disable-next-line @next/next/no-img-element
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
                                                     src: uploadedFile.preview,
                                                     alt: uploadedFile.file.name,
                                                     className: "h-12 w-12 object-cover rounded"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/try-now/page.tsx",
-                                                    lineNumber: 320,
+                                                    lineNumber: 321,
                                                     columnNumber: 45
                                                 }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                     className: "h-12 w-12 bg-muted rounded flex items-center justify-center",
@@ -847,12 +848,12 @@ function TryNowPage() {
                                                         className: "h-6 w-6 text-muted-foreground"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/try-now/page.tsx",
-                                                        lineNumber: 327,
+                                                        lineNumber: 328,
                                                         columnNumber: 49
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/try-now/page.tsx",
-                                                    lineNumber: 326,
+                                                    lineNumber: 327,
                                                     columnNumber: 45
                                                 }, this)
                                             }, void 0, false, {
@@ -871,7 +872,7 @@ function TryNowPage() {
                                                                 children: uploadedFile.file.name
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/try-now/page.tsx",
-                                                                lineNumber: 334,
+                                                                lineNumber: 335,
                                                                 columnNumber: 45
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -886,13 +887,13 @@ function TryNowPage() {
                                                                                 children: getStatusText(uploadedFile.status)
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/src/app/try-now/page.tsx",
-                                                                                lineNumber: 340,
+                                                                                lineNumber: 341,
                                                                                 columnNumber: 53
                                                                             }, this)
                                                                         ]
                                                                     }, void 0, true, {
                                                                         fileName: "[project]/src/app/try-now/page.tsx",
-                                                                        lineNumber: 338,
+                                                                        lineNumber: 339,
                                                                         columnNumber: 49
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
@@ -904,24 +905,24 @@ function TryNowPage() {
                                                                             className: "h-4 w-4"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/src/app/try-now/page.tsx",
-                                                                            lineNumber: 348,
+                                                                            lineNumber: 349,
                                                                             columnNumber: 53
                                                                         }, this)
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/app/try-now/page.tsx",
-                                                                        lineNumber: 342,
+                                                                        lineNumber: 343,
                                                                         columnNumber: 49
                                                                     }, this)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/src/app/try-now/page.tsx",
-                                                                lineNumber: 337,
+                                                                lineNumber: 338,
                                                                 columnNumber: 45
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/app/try-now/page.tsx",
-                                                        lineNumber: 333,
+                                                        lineNumber: 334,
                                                         columnNumber: 41
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -931,20 +932,20 @@ function TryNowPage() {
                                                                 children: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["formatBytes"])(uploadedFile.file.size)
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/try-now/page.tsx",
-                                                                lineNumber: 354,
+                                                                lineNumber: 355,
                                                                 columnNumber: 45
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                                 children: uploadedFile.file.type
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/try-now/page.tsx",
-                                                                lineNumber: 355,
+                                                                lineNumber: 356,
                                                                 columnNumber: 45
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/app/try-now/page.tsx",
-                                                        lineNumber: 353,
+                                                        lineNumber: 354,
                                                         columnNumber: 41
                                                     }, this),
                                                     (uploadedFile.status === 'uploading' || uploadedFile.status === 'processing') && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$progress$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Progress"], {
@@ -952,7 +953,7 @@ function TryNowPage() {
                                                         className: "mt-2"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/try-now/page.tsx",
-                                                        lineNumber: 359,
+                                                        lineNumber: 360,
                                                         columnNumber: 45
                                                     }, this),
                                                     uploadedFile.error && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -962,18 +963,18 @@ function TryNowPage() {
                                                             children: uploadedFile.error
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/try-now/page.tsx",
-                                                            lineNumber: 364,
+                                                            lineNumber: 365,
                                                             columnNumber: 49
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/try-now/page.tsx",
-                                                        lineNumber: 363,
+                                                        lineNumber: 364,
                                                         columnNumber: 45
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/try-now/page.tsx",
-                                                lineNumber: 332,
+                                                lineNumber: 333,
                                                 columnNumber: 37
                                             }, this)
                                         ]
@@ -1004,27 +1005,27 @@ function TryNowPage() {
                                                 className: "h-5 w-5 text-green-500"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/try-now/page.tsx",
-                                                lineNumber: 379,
+                                                lineNumber: 380,
                                                 columnNumber: 33
                                             }, this),
                                             "Document Processed Successfully!"
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/try-now/page.tsx",
-                                        lineNumber: 378,
+                                        lineNumber: 379,
                                         columnNumber: 29
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardDescription"], {
                                         children: "Your document has been analyzed and is ready for template selection"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/try-now/page.tsx",
-                                        lineNumber: 382,
+                                        lineNumber: 383,
                                         columnNumber: 29
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/try-now/page.tsx",
-                                lineNumber: 377,
+                                lineNumber: 378,
                                 columnNumber: 25
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardContent"], {
@@ -1041,7 +1042,7 @@ function TryNowPage() {
                                                             children: uploadedFile.extractedData?.title || uploadedFile.file.name
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/try-now/page.tsx",
-                                                            lineNumber: 390,
+                                                            lineNumber: 391,
                                                             columnNumber: 41
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$badge$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Badge"], {
@@ -1050,13 +1051,13 @@ function TryNowPage() {
                                                             children: uploadedFile.extractedData?.category || 'Document'
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/try-now/page.tsx",
-                                                            lineNumber: 393,
+                                                            lineNumber: 394,
                                                             columnNumber: 41
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/app/try-now/page.tsx",
-                                                    lineNumber: 389,
+                                                    lineNumber: 390,
                                                     columnNumber: 37
                                                 }, this),
                                                 uploadedFile.extractedData && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1069,7 +1070,7 @@ function TryNowPage() {
                                                                     children: "Date: "
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/try-now/page.tsx",
-                                                                    lineNumber: 402,
+                                                                    lineNumber: 403,
                                                                     columnNumber: 53
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1077,13 +1078,13 @@ function TryNowPage() {
                                                                     children: uploadedFile.extractedData.date
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/try-now/page.tsx",
-                                                                    lineNumber: 403,
+                                                                    lineNumber: 404,
                                                                     columnNumber: 53
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/app/try-now/page.tsx",
-                                                            lineNumber: 401,
+                                                            lineNumber: 402,
                                                             columnNumber: 49
                                                         }, this),
                                                         uploadedFile.extractedData.location && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1093,7 +1094,7 @@ function TryNowPage() {
                                                                     children: "Location: "
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/try-now/page.tsx",
-                                                                    lineNumber: 408,
+                                                                    lineNumber: 409,
                                                                     columnNumber: 53
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1101,13 +1102,13 @@ function TryNowPage() {
                                                                     children: uploadedFile.extractedData.location
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/try-now/page.tsx",
-                                                                    lineNumber: 409,
+                                                                    lineNumber: 410,
                                                                     columnNumber: 53
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/app/try-now/page.tsx",
-                                                            lineNumber: 407,
+                                                            lineNumber: 408,
                                                             columnNumber: 49
                                                         }, this),
                                                         uploadedFile.extractedData.phone && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1117,7 +1118,7 @@ function TryNowPage() {
                                                                     children: "Phone: "
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/try-now/page.tsx",
-                                                                    lineNumber: 414,
+                                                                    lineNumber: 415,
                                                                     columnNumber: 53
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1125,13 +1126,13 @@ function TryNowPage() {
                                                                     children: uploadedFile.extractedData.phone
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/try-now/page.tsx",
-                                                                    lineNumber: 415,
+                                                                    lineNumber: 416,
                                                                     columnNumber: 53
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/app/try-now/page.tsx",
-                                                            lineNumber: 413,
+                                                            lineNumber: 414,
                                                             columnNumber: 49
                                                         }, this),
                                                         uploadedFile.extractedData.email && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1141,7 +1142,7 @@ function TryNowPage() {
                                                                     children: "Email: "
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/try-now/page.tsx",
-                                                                    lineNumber: 420,
+                                                                    lineNumber: 421,
                                                                     columnNumber: 53
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1149,25 +1150,25 @@ function TryNowPage() {
                                                                     children: uploadedFile.extractedData.email
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/try-now/page.tsx",
-                                                                    lineNumber: 421,
+                                                                    lineNumber: 422,
                                                                     columnNumber: 53
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/app/try-now/page.tsx",
-                                                            lineNumber: 419,
+                                                            lineNumber: 420,
                                                             columnNumber: 49
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/app/try-now/page.tsx",
-                                                    lineNumber: 399,
+                                                    lineNumber: 400,
                                                     columnNumber: 41
                                                 }, this)
                                             ]
                                         }, uploadedFile.uploadId, true, {
                                             fileName: "[project]/src/app/try-now/page.tsx",
-                                            lineNumber: 388,
+                                            lineNumber: 389,
                                             columnNumber: 33
                                         }, this)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1182,30 +1183,30 @@ function TryNowPage() {
                                                     className: "ml-2 h-4 w-4"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/try-now/page.tsx",
-                                                    lineNumber: 432,
+                                                    lineNumber: 433,
                                                     columnNumber: 37
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/try-now/page.tsx",
-                                            lineNumber: 430,
+                                            lineNumber: 431,
                                             columnNumber: 33
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/try-now/page.tsx",
-                                        lineNumber: 429,
+                                        lineNumber: 430,
                                         columnNumber: 29
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/try-now/page.tsx",
-                                lineNumber: 386,
+                                lineNumber: 387,
                                 columnNumber: 25
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/try-now/page.tsx",
-                        lineNumber: 376,
+                        lineNumber: 377,
                         columnNumber: 21
                     }, this)
                 ]
