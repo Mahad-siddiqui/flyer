@@ -1,9 +1,22 @@
+"use client";
 // src/app/templates/page.tsx
 import { Suspense } from "react";
 import { TemplateLibrary } from "@/components/templates/template-library";
 import { TemplateFilters } from "@/components/templates/template-filters";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Skeleton } from "@/components/ui/skeleton";
+import { useState, useEffect } from "react";
+interface Template {
+  id: string;
+  name: string;
+  description: string;
+  category: string;
+  previewImage: string;
+  isPremium: boolean;
+  isActive: boolean;
+  createdAt: string;
+  updatedAt: string;
+}
 
 function TemplateLibrarySkeleton() {
   return (
@@ -27,6 +40,30 @@ function TemplateLibrarySkeleton() {
 }
 
 export default function TemplatesPage() {
+  const [templates, setTemplates] = useState<Template[]>([]);
+
+  const fetchTemplates = async () => {
+    try {
+      console.log("Fetching templates...");
+      const url = new URL("/api/templates", window.location.origin);
+      const response = await fetch(url.toString());
+      if (!response.ok) {
+        throw new Error("Failed to fetch templates");
+      }
+
+      const data = await response.json();
+      setTemplates(data || []);
+      // console.log("data---->", data);
+    } catch (err) {
+      console.log(err instanceof Error ? err.message : "An error occurred");
+    } finally {
+    }
+  };
+
+  useEffect(() => {
+    fetchTemplates();
+  }, []);
+
   return (
     <div className="container mx-auto px-4 py-8">
       <div className="max-w-7xl mx-auto">
@@ -46,13 +83,13 @@ export default function TemplatesPage() {
               <div className="h-16 bg-muted rounded-lg animate-pulse" />
             }
           >
-            <TemplateFilters />
+            <TemplateFilters templates={templates} />
           </Suspense>
         </div>
 
         {/* Templates Grid */}
         <Suspense fallback={<TemplateLibrarySkeleton />}>
-          <TemplateLibrary/>
+          <TemplateLibrary />
         </Suspense>
       </div>
     </div>

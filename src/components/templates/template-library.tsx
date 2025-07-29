@@ -54,6 +54,7 @@ export function TemplateLibrary() {
 
       const data = await response.json();
       setTemplates(data.templates || []);
+      // console.log("--->", data.templates);
     } catch (err) {
       setError(err instanceof Error ? err.message : "An error occurred");
     } finally {
@@ -116,7 +117,15 @@ export function TemplateLibrary() {
           {/* Preview Image */}
           <div className="relative aspect-[4/3] bg-muted overflow-hidden">
             <div className="w-full h-full bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center">
-              <Sparkles className="h-12 w-12 text-primary/40" />
+              {template.previewImage ? (
+                <img
+                  src={template.previewImage}
+                  alt="Template Preview"
+                  className="w-full h-full object-cover"
+                />
+              ) : (
+                <Sparkles className="h-12 w-12 text-primary/40" />
+              )}
             </div>
 
             {/* Premium Badge */}
@@ -134,7 +143,7 @@ export function TemplateLibrary() {
 
             {/* Category Badge */}
             <div className="absolute top-3 left-3">
-              <Badge variant="outline" className="bg-white/90 border-white/20">
+              <Badge variant="outline" className=" border-white/20">
                 {template.category}
               </Badge>
             </div>

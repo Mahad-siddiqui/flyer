@@ -344,16 +344,18 @@ function Skeleton({ className, ...props }) {
 "[project]/src/app/templates/page.tsx [app-rsc] (ecmascript)": ((__turbopack_context__) => {
 "use strict";
 
-// src/app/templates/page.tsx
 __turbopack_context__.s({
     "default": ()=>TemplatesPage
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react-jsx-dev-runtime.js [app-rsc] (ecmascript)");
+// src/app/templates/page.tsx
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react.js [app-rsc] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$templates$2f$template$2d$library$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/templates/template-library.tsx [app-rsc] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$templates$2f$template$2d$filters$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/templates/template-filters.tsx [app-rsc] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/ui/card.tsx [app-rsc] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$skeleton$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/ui/skeleton.tsx [app-rsc] (ecmascript)");
+'use Clients';
+;
 ;
 ;
 ;
@@ -361,6 +363,33 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$s
 ;
 ;
 function TemplateLibrarySkeleton() {
+    const [templates, setTemplates] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["useState"])([]);
+    const [loading, setLoading] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["useState"])(true);
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
+        fetchTemplates();
+    }, [
+        categoryFilter
+    ]);
+    const fetchTemplates = async ()=>{
+        try {
+            setLoading(true);
+            const url = new URL("/api/templates", window.location.origin);
+            // if (categoryFilter && categoryFilter !== "all") {
+            //   url.searchParams.set("category", categoryFilter);
+            // }
+            const response = await fetch(url.toString());
+            if (!response.ok) {
+                throw new Error("Failed to fetch templates");
+            }
+            const data = await response.json();
+            setTemplates(data.templates || []);
+            console.log("data---->", data);
+        } catch (err) {
+            console.log(err instanceof Error ? err.message : "An error occurred");
+        } finally{
+            setLoading(false);
+        }
+    };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: "grid md:grid-cols-2 lg:grid-cols-3 gap-6",
         children: Array.from({
@@ -374,12 +403,12 @@ function TemplateLibrarySkeleton() {
                             className: "w-full h-full"
                         }, void 0, false, {
                             fileName: "[project]/src/app/templates/page.tsx",
-                            lineNumber: 14,
+                            lineNumber: 60,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/app/templates/page.tsx",
-                        lineNumber: 13,
+                        lineNumber: 59,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["CardHeader"], {
@@ -389,20 +418,20 @@ function TemplateLibrarySkeleton() {
                                 className: "h-4 w-3/4"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/templates/page.tsx",
-                                lineNumber: 17,
+                                lineNumber: 63,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$skeleton$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Skeleton"], {
                                 className: "h-3 w-1/2"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/templates/page.tsx",
-                                lineNumber: 18,
+                                lineNumber: 64,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/templates/page.tsx",
-                        lineNumber: 16,
+                        lineNumber: 62,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["CardContent"], {
@@ -410,23 +439,23 @@ function TemplateLibrarySkeleton() {
                             className: "h-9 w-full"
                         }, void 0, false, {
                             fileName: "[project]/src/app/templates/page.tsx",
-                            lineNumber: 21,
+                            lineNumber: 67,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/app/templates/page.tsx",
-                        lineNumber: 20,
+                        lineNumber: 66,
                         columnNumber: 11
                     }, this)
                 ]
             }, i, true, {
                 fileName: "[project]/src/app/templates/page.tsx",
-                lineNumber: 12,
+                lineNumber: 58,
                 columnNumber: 9
             }, this))
     }, void 0, false, {
         fileName: "[project]/src/app/templates/page.tsx",
-        lineNumber: 10,
+        lineNumber: 56,
         columnNumber: 5
     }, this);
 }
@@ -444,7 +473,7 @@ function TemplatesPage() {
                             children: "Template Library"
                         }, void 0, false, {
                             fileName: "[project]/src/app/templates/page.tsx",
-                            lineNumber: 35,
+                            lineNumber: 81,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -452,13 +481,13 @@ function TemplatesPage() {
                             children: "Choose from our collection of professionally designed templates for your flyers"
                         }, void 0, false, {
                             fileName: "[project]/src/app/templates/page.tsx",
-                            lineNumber: 36,
+                            lineNumber: 82,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/templates/page.tsx",
-                    lineNumber: 34,
+                    lineNumber: 80,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -468,49 +497,49 @@ function TemplatesPage() {
                             className: "h-16 bg-muted rounded-lg animate-pulse"
                         }, void 0, false, {
                             fileName: "[project]/src/app/templates/page.tsx",
-                            lineNumber: 46,
+                            lineNumber: 92,
                             columnNumber: 15
                         }, void 0),
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$templates$2f$template$2d$filters$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["TemplateFilters"], {}, void 0, false, {
                             fileName: "[project]/src/app/templates/page.tsx",
-                            lineNumber: 49,
+                            lineNumber: 95,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/app/templates/page.tsx",
-                        lineNumber: 44,
+                        lineNumber: 90,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/app/templates/page.tsx",
-                    lineNumber: 43,
+                    lineNumber: 89,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Suspense"], {
                     fallback: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(TemplateLibrarySkeleton, {}, void 0, false, {
                         fileName: "[project]/src/app/templates/page.tsx",
-                        lineNumber: 54,
+                        lineNumber: 100,
                         columnNumber: 29
                     }, void 0),
                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$templates$2f$template$2d$library$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["TemplateLibrary"], {}, void 0, false, {
                         fileName: "[project]/src/app/templates/page.tsx",
-                        lineNumber: 55,
+                        lineNumber: 101,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/app/templates/page.tsx",
-                    lineNumber: 54,
+                    lineNumber: 100,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/app/templates/page.tsx",
-            lineNumber: 32,
+            lineNumber: 78,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/app/templates/page.tsx",
-        lineNumber: 31,
+        lineNumber: 77,
         columnNumber: 5
     }, this);
 }

@@ -1,6 +1,8 @@
 {
   "/_not-found/page": "app/_not-found/page.js",
+  "/about/page": "app/about/page.js",
   "/api/auth/[...nextauth]/route": "app/api/auth/[...nextauth]/route.js",
+  "/api/auth/register/route": "app/api/auth/register/route.js",
   "/api/dashboard/stats/route": "app/api/dashboard/stats/route.js",
   "/api/flyers/[id]/route": "app/api/flyers/[id]/route.js",
   "/api/flyers/[id]/update-qrcode/route": "app/api/flyers/[id]/update-qrcode/route.js",
@@ -9,6 +11,8 @@
   "/api/templates/[id]/route": "app/api/templates/[id]/route.js",
   "/api/templates/route": "app/api/templates/route.js",
   "/api/upload/route": "app/api/upload/route.js",
+  "/auth/register/page": "app/auth/register/page.js",
+  "/auth/signin/page": "app/auth/signin/page.js",
   "/dashboard/flyers/[id]/page": "app/dashboard/flyers/[id]/page.js",
   "/dashboard/page": "app/dashboard/page.js",
   "/dashboard/upload/page": "app/dashboard/upload/page.js",
