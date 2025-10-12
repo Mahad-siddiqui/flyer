@@ -1,6 +1,6 @@
 # FlyerWeb - Transform Flyers into Interactive Web Pages
 
-A modern SaaS application that uses AI to transform flyers into mobile-responsive web pages with QR codes. Built with Next.js 14, Prisma, MySQL, NextAuth, Stripe, and Gemini AI.
+A modern SAAS application that uses AI to transform flyers into mobile-responsive web pages with QR codes. Built with Next.js 14, Prisma, MySQL, NextAuth, Stripe, and Gemini AI.
 
 ## 🚀 Features
 
